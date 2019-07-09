@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title My App
+        link(rel="stylesheet", href="/css/bootstrap.min.css")
+        link(rel="stylesheet", href="/css/main.css")
+    body
+        header.main-header
+            div.container
+                div.row
+                    div.col
+                        h2 Node APP
+
+                div.row
+                    div.col
+                        form(method='POST', action='/')
+                            .form-group
+                                label(for='exampleInputEmail1') Username
+                                input#exampleInputEmail1.form-control(type='text', aria-describedby='emailHelp', name="username" placeholder='Enter username')
+                                small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+                            .form-group
+                                label(for='exampleInputPassword1') Password
+                                input#exampleInputPassword1.form-control(type='password', placeholder='Password', name="password") 
+                            button.btn.btn-primary(type='submit') Sign In
+       
