@@ -3,14 +3,9 @@ const path = require("path");
 const router = express.Router();
 const bodyParser = require("body-parser");
 const url = bodyParser.urlencoded({extended: false});
-const GetAllUsers = require("../controller/userController");
 
 router.get('/', (req, res, next) => {
     
-    let user = GetAllUsers();
-    console.log("result = ", user);
-
-
     res.render('home', {
         pageTitle: 'Node',
         path: '/'
